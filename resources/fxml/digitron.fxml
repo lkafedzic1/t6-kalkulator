@@ -1,0 +1,50 @@
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import java.net.URL?>
+<GridPane fx:controller="ba.unsa.etf.rpr.t6.Controller"
+          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
+    <stylesheets>
+        <URL value="@/css/style.css"/>
+    </stylesheets>
+
+    <columnConstraints>
+        <ColumnConstraints hgrow="ALWAYS"/>
+        <ColumnConstraints hgrow="ALWAYS"/>
+        <ColumnConstraints hgrow="ALWAYS"/>
+        <ColumnConstraints hgrow="ALWAYS"/>
+    </columnConstraints>
+
+    <rowConstraints>
+        <RowConstraints vgrow="ALWAYS"/>
+        <RowConstraints vgrow="ALWAYS"/>
+        <RowConstraints vgrow="ALWAYS"/>
+        <RowConstraints vgrow="ALWAYS"/>
+        <RowConstraints vgrow="ALWAYS"/>
+    </rowConstraints>
+
+    <Label fx:id="displaystart" GridPane.columnSpan="4" maxWidth="Infinity" maxHeight="Infinity" text="${controller.displej}" />
+    <Button fx:id="modBtn" GridPane.rowIndex="1" maxWidth="Infinity" text="\%" onAction="#modulo"/>
+    <Button fx:id="divBtn" GridPane.columnIndex="1" GridPane.rowIndex="1" maxWidth="Infinity"  text="/" onAction="#division"/>
+    <Button fx:id="mulBtn" GridPane.rowIndex="1" GridPane.columnIndex="2" maxWidth="Infinity" text="*" onAction="#multiplication"/>
+    <Button fx:id="btn7" GridPane.rowIndex="2" maxWidth="Infinity" text="7" onAction="#button7"/>
+    <Button fx:id="btn8" GridPane.rowIndex="2" GridPane.columnIndex="1" maxWidth="Infinity" text="8"  onAction="#button8"/>
+    <Button fx:id="btn9" GridPane.rowIndex="2" GridPane.columnIndex="2" maxWidth="Infinity" text="9" onAction="#button9"/>
+    <Button fx:id="btn4" GridPane.rowIndex="3" maxWidth="Infinity" text="4" onAction="#button4"/>
+    <Button fx:id="btn5" GridPane.rowIndex="3" GridPane.columnIndex="1" maxWidth="Infinity" text="5" onAction="#button5"/>
+    <Button fx:id="btn6" GridPane.rowIndex="3" GridPane.columnIndex="2" maxWidth="Infinity" text="6" onAction="#button6"/>
+    <Button fx:id="btn1" GridPane.rowIndex="4"  maxWidth="Infinity" text="1" onAction="#button1"/>
+    <Button fx:id="btn2" GridPane.rowIndex="4" GridPane.columnIndex="1" maxWidth="Infinity" text="2" onAction="#button2"/>
+    <Button fx:id="btn3" GridPane.rowIndex="4" GridPane.columnIndex="2" maxWidth="Infinity" text="3" onAction="#button3"/>
+
+    <Button fx:id="minusBtn" GridPane.rowIndex="1" GridPane.columnIndex="3" maxWidth="Infinity" text="-" onAction="#substraction"/>
+    <Button fx:id="plusBtn" GridPane.rowIndex="2" GridPane.columnIndex="3" GridPane.rowSpan="2" maxHeight="Infinity" maxWidth="Infinity" text="+" onAction="#addition"/>
+    <Button fx:id="equalsBtn" GridPane.rowIndex="4" GridPane.columnIndex="3" GridPane.rowSpan="2" maxHeight="Infinity" maxWidth="Infinity" text="=" onAction="#equals"/>
+    <Button fx:id="btn0" GridPane.rowIndex="5" GridPane.columnIndex="0" GridPane.columnSpan="2" maxWidth="Infinity" text="0" onAction="#button0"/>
+    <Button fx:id="dotBtn" GridPane.rowIndex="5" GridPane.columnIndex="2" maxWidth="Infinity" text="." onAction="#decimal"/>
+
+</GridPane>
